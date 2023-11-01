@@ -42,8 +42,7 @@ export default function Table() {
     <div>
       <div className="bg-white h-[15%] w-[98%] flex items-center justify-center">
         <Search
-          value={search}
-          onChange= {(e) => setSearch(e.target.value)}
+         
         />
       </div>
       <div className="flex flex-col items-center justify-start h-[55vh] mt-3 w-[98%] ">
