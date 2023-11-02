@@ -28,6 +28,19 @@ cloudinary.config({
         process.env.API_SECRET,
 
 })
+const allowedOrigins = ['https://prosperio3-nil6.vercel.app'];
+
+const corsOptions = {
+  origin: function (origin, callback) {
+    if (allowedOrigins.indexOf(origin) !== -1 || !origin) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
+};
+
+app.use(cors(corsOptions));
 
 //middleware to pass incoming request
 app.use(express.json())
