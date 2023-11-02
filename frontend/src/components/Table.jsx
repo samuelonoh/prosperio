@@ -4,7 +4,7 @@ import { BsEye } from "react-icons/bs";
 import { HiOutlineRefresh } from "react-icons/hi";
 import { ImBin } from "react-icons/im";
 import { Link } from "react-router-dom";
-import Search from "./search";
+// import Search from "./search";
 import { deleteProduct, setProducts } from "../slices/products/productSlice";
 
 
@@ -13,7 +13,7 @@ export default function Table() {
   const dispatch = useDispatch();
   const products = useSelector((state) => state.product.products);
 
-  const [search, setSearch] = useState("");
+  // const [search, setSearch] = useState("");
   
 
   useEffect(() => {
@@ -40,10 +40,10 @@ export default function Table() {
 
   return (
     <div>
-      <div className="bg-white h-[15%] w-[98%] flex items-center justify-center">
+{/*       <div className="bg-white h-[15%] w-[98%] flex items-center justify-center">
         <Search
          
-        />
+        /> */}
       </div>
       <div className="flex flex-col items-center justify-start h-[55vh] mt-3 w-[98%] ">
         <table className="w-full text-center table-auto ">
