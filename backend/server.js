@@ -13,7 +13,7 @@ import { fileURLToPath } from 'url';
 import { dirname } from 'path'
 import path from 'path';
 import cloudinary from 'cloudinary'
-const cors = require('cors');
+import cors from 'cors'
 
 connectDB();
 
