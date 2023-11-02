@@ -43,8 +43,8 @@ export default function Table() {
 {/*       <div className="bg-white h-[15%] w-[98%] flex items-center justify-center">
         <Search
          
-        /> */}
-      </div>
+        />
+      </div> */}
       <div className="flex flex-col items-center justify-start h-[55vh] mt-3 w-[98%] ">
         <table className="w-full text-center table-auto ">
           <thead>
