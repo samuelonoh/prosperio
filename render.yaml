@@ -1,0 +1,10 @@
+version: 1
+build:
+  steps:
+    - name: Build Frontend
+      command: npm install
+    - name: Build Backend
+      command: npm install
+start:
+  web: npm run client
+  api: npm run server
